@@ -1,11 +1,6 @@
-[![Version](https://img.shields.io/github/v/release/runcitadel/os?color=%235351FB&label=version)](https://github.com/runcitadel/os/releases)
-[![Discord Server](https://img.shields.io/badge/Community%20Chat-Discord-%235351FB)](https://discord.gg/6U3kM2cjdB)
-[![Twitter](https://img.shields.io/twitter/follow/runcitadel?style=social)](https://twitter.com/runcitadel)
+# Nirvati OS - Raspberry Pi Edition
 
-
-# Citadel OS - Base image
-
-Citadel OS is the operating system of Umbrel Bitcoin and Lightning node. It's based on Raspberry Pi OS (formerly Raspbian) and uses [pi-gen](https://github.com/RPi-Distro/pi-gen) for customization.
+This is the optimized operating system for Nirvati, based on Raspberry Pi OS.
 
 
 ## 🔧 Advanced
