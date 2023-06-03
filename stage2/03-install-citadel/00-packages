@@ -9,3 +9,7 @@ python3-jsonschema
 python3-dacite
 python3-semver
 i2c-tools
+rsync
+curl
+gettext-base
+gnupg

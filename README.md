@@ -1,33 +1,16 @@
-# Nirvati OS - Raspberry Pi Edition
+# SchirmOS
 
-This is the optimized operating system for Nirvati, based on Raspberry Pi OS.
-
-
-## 🔧 Advanced
-
-**Config variables**
-
-The `config` file has system defaults which are used when building the image and for automated builds.
-
-- `CITADEL_VERSION` - To install the specific [Citadel](https://github.com/runcitadel/core) version.
-
-- `GITHUB_USERNAME` - To automatically login to your node without typing a password.
-
-- `CITADEL_REPO` - A custom git repo used to download Citadek. `CITADEL_VERSION` is ignored if this is set, but it is required to also set `CITADEL_BRANCH`.
-
-- `CITADEL_BRANCH` - The git branch or commit SHA in the custom repo that should be checked out.
-
-Other pi-gen-related stuff can be found in [pi-gen's documentation](https://github.com/RPi-Distro/pi-gen/blob/master/README.md) which is still applicable.
+An open source replacement for umbrelOS that still runs Umbrel, but uses a modernized Debian base.
 
 ---
 
 ### ⚡️ Don't be too reckless
 
-> Citadel is still in an early stage and things are expected to break every now and then. We **DO NOT** recommend running it on mainnet with real money just yet, unless you want to be really *#reckless*.
+> SchirmOS is still in an early stage and things are expected to break every now and then.
 
 ## 📜 License
 
-Citadel OS is licensed under the GNU Affero General Public License v3.0 or later.
+SchirmOS is licensed under the GNU Affero General Public License v3.0 or later.
 
 [![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](https://opensource.org/licenses/AGPL-3.0)
 

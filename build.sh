@@ -192,8 +192,8 @@ term() {
 
 trap term EXIT INT TERM
 
-export BUILD_SCRIPTS="${BUILD_SCRIPTS:-Citadel OS official build scripts}"
-export BUILD_SCRIPTS_REPO="${BUILD_SCRIPTS_REPO:-https://github.com/runcitadel/os}"
+export BUILD_SCRIPTS="${BUILD_SCRIPTS:-SchirmOS build scripts}"
+export BUILD_SCRIPTS_REPO="${BUILD_SCRIPTS_REPO:-https://github.com/SchirmOS/schirm-os}"
 
 if [ -z "${IMG_NAME}" ]; then
 	echo "IMG_NAME not set" 1>&2
@@ -221,10 +221,10 @@ export DEPLOY_COMPRESSION=${DEPLOY_COMPRESSION:-zip}
 export COMPRESSION_LEVEL=${COMPRESSION_LEVEL:-6}
 export LOG_FILE="${WORK_DIR}/build.log"
 
-export TARGET_HOSTNAME=${TARGET_HOSTNAME:-citadel}
+export TARGET_HOSTNAME=${TARGET_HOSTNAME:-umbrel}
 
-export FIRST_USER_NAME=${FIRST_USER_NAME:-citadel}
-export FIRST_USER_PASS=${FIRST_USER_PASS:-freedom}
+export FIRST_USER_NAME=${FIRST_USER_NAME:-umbrel}
+export FIRST_USER_PASS=${FIRST_USER_PASS:-moneyprintergobrrr}
 export RELEASE=${RELEASE:-bullseye} # Don't forget to update stage0/prerun.sh
 export WPA_ESSID
 export WPA_PASSWORD
@@ -265,9 +265,9 @@ export QUILT_NO_DIFF_INDEX=1
 export QUILT_NO_DIFF_TIMESTAMPS=1
 export QUILT_REFRESH_ARGS="-p ab"
 
-export CITADEL_VERSION
-export CITADEL_REPO
-export CITADEL_BRANCH
+export UMBREL_VERSION
+export UMBREL_REPO
+export UMBREL_BRANCH
 
 # shellcheck source=scripts/common
 source "${SCRIPT_DIR}/common"

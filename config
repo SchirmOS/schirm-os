@@ -1,8 +1,7 @@
-IMG_NAME=citadel-os
-TARGET_HOSTNAME=citadel
+IMG_NAME=schirm-os
+TARGET_HOSTNAME=umbrel
 TIMEZONE_DEFAULT="Etc/UTC"
-FIRST_USER_NAME=citadel
-FIRST_USER_PASS=freedom
+FIRST_USER_NAME=umbrel
+FIRST_USER_PASS=moneyprintergobrrr
 ENABLE_SSH=1
-CITADEL_REPO=https://github.com/runcitadel/core
-CITADEL_BRANCH=stable
+UMBREL_VERSION=0.5.3

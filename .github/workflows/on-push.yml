@@ -18,9 +18,9 @@ jobs:
 
         - name: Set image name
           run: |
-              CITADEL_OS_VERSION="$(git describe --tags)"
-              IMAGE_NAME="citadel-os-${CITADEL_OS_VERSION}"
-              echo "CITADEL_OS_VERSION=$CITADEL_OS_VERSION"  >> $GITHUB_ENV
+              SCHIRM_OS_VERSION="$(git describe --tags)"
+              IMAGE_NAME="schirm-os-${SCHIRM_OS_VERSION}"
+              echo "SCHIRM_OS_VERSION=$SCHIRM_OS_VERSION"  >> $GITHUB_ENV
               echo "IMAGE_NAME=$IMAGE_NAME"  >> $GITHUB_ENV
 
         - name: Prepare Docker
@@ -34,7 +34,7 @@ jobs:
         - name: Run build script
           run: |
               echo "Building $IMAGE_NAME"
-              sudo IMG_FILENAME=$IMAGE_NAME ARCHIVE_FILENAME=$IMAGE_NAME CITADEL_OS_VERSION=$CITADEL_OS_VERSION ./build.sh
+              sudo IMG_FILENAME=$IMAGE_NAME ARCHIVE_FILENAME=$IMAGE_NAME SCHIRM_OS_VERSION=$SCHIRM_OS_VERSION ./build.sh
         - name: Copy ZIP to current working dir
           run: cp deploy/*.zip ./
 
