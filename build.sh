@@ -225,7 +225,7 @@ export TARGET_HOSTNAME=${TARGET_HOSTNAME:-citadel}
 
 export FIRST_USER_NAME=${FIRST_USER_NAME:-citadel}
 export FIRST_USER_PASS=${FIRST_USER_PASS:-freedom}
-export RELEASE=${RELEASE:-bullseye} # Don't forget to update stage0/prerun.sh
+export RELEASE=${RELEASE:-bookworm} # Don't forget to update stage0/prerun.sh
 export WPA_ESSID
 export WPA_PASSWORD
 export WPA_COUNTRY
