@@ -5,7 +5,7 @@ build-job:
           alias: docker
     script:
         - apt update && DEBIAN_FRONTEND=noninteractive apt install -y binfmt-support qemu-user-static quilt debootstrap apt-cacher-ng libarchive-tools qemu-utils gpg pigz
-        - sudo IMG_FILENAME=citadel-os-latest ARCHIVE_FILENAME=citadel-os-latest CITADEL_OS_VERSION=0.3.0 ./build.sh
+        - IMG_FILENAME=citadel-os-latest ARCHIVE_FILENAME=citadel-os-latest CITADEL_OS_VERSION=0.3.0 ./build.sh
     artifacts:
         paths:
             - deploy
