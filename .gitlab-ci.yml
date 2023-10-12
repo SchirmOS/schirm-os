@@ -1,0 +1,11 @@
+build-job:
+    image: harbor.nirvati.org/library/docker:24-cli
+    services:
+        - name: harbor.nirvati.org/library/docker:24-dind@sha256:28e312e051b1c4b02c78ab27ee34eb29752c409db6dab0b5df11c129c42c4926
+          alias: docker
+    script:
+        - apt update && apt install -y binfmt-support qemu-user-static quilt debootstrap apt-cacher-ng libarchive-tools qemu-utils gpg pigz
+        - sudo IMG_FILENAME=citadel-os-latest ARCHIVE_FILENAME=citadel-os-latest CITADEL_OS_VERSION=0.3.0 ./build.sh
+    artifacts:
+        paths:
+            - deploy
