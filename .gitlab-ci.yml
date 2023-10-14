@@ -4,7 +4,6 @@ build-job:
     image: debian:bookworm
     script:
         - apt update && DEBIAN_FRONTEND=noninteractive apt install -y quilt debootstrap libarchive-tools qemu-utils gpg pigz parted zerofree zip dosfstools libcap2-bin rsync xz-utils curl xxd file git kmod bc kpartx
-        - mknod /dev/loop0 b 7 0
         - IMG_FILENAME=citadel-os-latest ARCHIVE_FILENAME=citadel-os-latest CITADEL_OS_VERSION=0.3.0 ./build.sh
     artifacts:
         paths:
