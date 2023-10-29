@@ -27,7 +27,7 @@ yq_temp_file="/tmp/yq"
 curl -L "https://github.com/mikefarah/yq/releases/download/v4.35.2/yq_linux_arm64" -o "${yq_temp_file}"
 
 # Check file matches checksum
-if [[ "$(sha256sum "${yq_temp_file}" | awk '{ print $1 }')" == "8879e61c0b3b70908160535ea358ec67989ac4435435510e1fcb2eda5d74a0e9" ]]; then
+if [[ "$(sha256sum "${yq_temp_file}" | awk '{ print $1 }')" == "6ea822bc966e7dc23bb7d675a1ff36bc2e7a9a9f88c402129eafbd6b19d8ff8a" ]]; then
     sudo mv "${yq_temp_file}" "${ROOTFS_DIR}/usr/bin/yq"
     sudo chmod +x "${ROOTFS_DIR}/usr/bin/yq"
     echo "yq installed successfully..."
