@@ -24,7 +24,7 @@ EOF
 echo "Install yq..."
 # Download yq from GitHub
 yq_temp_file="/tmp/yq"
-curl -L "https://github.com/mikefarah/yq/releases/download/v4.24.5/yq_linux_arm64" -o "${yq_temp_file}"
+curl -L "https://github.com/mikefarah/yq/releases/download/v4.35.2/yq_linux_arm64" -o "${yq_temp_file}"
 
 # Check file matches checksum
 if [[ "$(sha256sum "${yq_temp_file}" | awk '{ print $1 }')" == "8879e61c0b3b70908160535ea358ec67989ac4435435510e1fcb2eda5d74a0e9" ]]; then
