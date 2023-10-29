@@ -2,7 +2,7 @@ ssh less fbset sudo psmisc
 console-setup keyboard-configuration parted unzip
 bash-completion
 avahi-daemon
-hardlink ca-certificates curl
+ca-certificates curl
 fake-hwclock usbutils
 dosfstools
 raspberrypi-sys-mods
