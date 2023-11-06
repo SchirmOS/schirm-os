@@ -11,6 +11,7 @@ on_chroot << EOF
 curl -fsSL https://get.docker.com | sh
 usermod -a -G docker $FIRST_USER_NAME
 apt install -y docker-compose-plugin
+curl -fL https://raw.githubusercontent.com/docker/compose-switch/master/install_on_linux.sh | sh
 EOF
 
 
